@@ -436,7 +436,7 @@ header .btn h4:hover {
   padding: 13px;
   width: 40px;
   height: 40px;
-  margin: 0 9px;
+  margin: 0 8px;
   cursor: pointer;
 }
 #amazingteam .box .iconbox .icon:hover {
@@ -522,31 +522,30 @@ footer {
 }
 footer h1, footer h2 {
   color: rgba(33, 37, 41, 0.7019607843);
+  font-size: 17px;
 }
 footer h1 {
-  font-size: 17px;
   cursor: text;
+}
+footer h2 {
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
 }
 footer .icon {
   display: inline-block;
   background-color: #212529;
-  border-radius: 50%;
   color: white;
+  border-radius: 50%;
   padding: 13px;
   width: 40px;
   height: 40px;
-  margin: 0 9px;
+  margin: 0 8px;
   cursor: pointer;
 }
 footer .icon:hover {
   background-color: rgba(33, 37, 41, 0.8392156863);
 }
 footer .icon i {
-  cursor: pointer;
-}
-footer h2 {
-  font-size: 17px;
-  display: inline-block;
-  margin: 0 10px;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
