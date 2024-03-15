@@ -15,6 +15,7 @@ header {
   background-image: url("assets/header-bg.jpg");
   background-size: cover;
   background-position: center;
+  /* :: Media queries :: */
 }
 header h1 {
   font-size: 85px;
@@ -233,21 +234,22 @@ header .btn h4:hover {
 }
 
 #about {
-  padding: 100px 0;
+  padding: 96px 0;
+  /* :: Media queries :: */      
 }
 #about h1 {
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 #about h3 {
   font-size: 19px;
-  margin-bottom: 60px;
   font-style: italic;
   color: #6c757d;
+  margin-bottom: 64px;
 }
 #about h2, #about h4 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 #about h2 {
   font-weight: 600;
@@ -259,10 +261,10 @@ header .btn h4:hover {
 }
 #about p {
   font-size: 19px;
-  color: #6c757d;
   line-height: 1.4;
+  color: #6c757d;
 }
-#about .timeline:before {
+#about ul:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -271,11 +273,6 @@ header .btn h4:hover {
   margin-left: -1.5px;
   content: "";
   background-color: #e9ecef;
-}
-@media (max-width: 768px) {
-  #about .timeline:before {
-    left: 40px;
-  }
 }
 #about ul {
   list-style: none;
@@ -286,6 +283,53 @@ header .btn h4:hover {
   position: relative;
   margin-bottom: 100px;
   min-height: 170px;
+}
+#about ul li:after, #about ul li:before {
+  display: table;
+  content: " ";
+}
+#about ul li:after {
+  clear: both;
+}
+#about ul .lastli {
+  margin-bottom: 0;
+}
+#about .end, #about .start {
+  position: relative;
+  width: 41%;
+}
+#about .end {
+  float: left;
+  padding: 0 20px 20px 100px;
+  text-align: right;
+}
+#about .start {
+  float: right;
+  padding: 0 100px 20px 20px;
+}
+#about .imgbox {
+  position: absolute;
+  left: 50%;
+  margin-left: -85px;
+  text-align: center;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #e9ecef;
+  border-radius: 50%;
+  background-color: #ffc800;
+  color: white;
+  overflow: hidden;
+}
+#about .imgbox h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 38px 40px;
+}
+@media (max-width: 768px) {
+  #about ul:before {
+    left: 40px;
+  }
 }
 @media (max-width: 992px) {
   #about ul li {
@@ -298,33 +342,10 @@ header .btn h4:hover {
     margin-bottom: 50px;
   }
 }
-#about ul .lastli {
-  margin-bottom: 0;
-}
-#about ul li:after, #about ul li:before {
-  display: table;
-  content: " ";
-}
-#about ul li:after {
-  clear: both;
-}
-#about .end {
-  position: relative;
-  width: 41%;
-  float: left;
-  padding: 0 20px 20px 100px;
-  text-align: right;
-}
 @media (max-width: 992px) {
   #about .end {
     padding: 0 20px 20px 30px;
   }
-}
-#about .start {
-  position: relative;
-  width: 41%;
-  float: right;
-  padding: 0 100px 20px 20px;
 }
 @media (max-width: 992px) {
   #about .start {
@@ -337,19 +358,6 @@ header .btn h4:hover {
     width: 100%;
     text-align: left;
   }
-}
-#about .imgbox {
-  background-color: #ffc800;
-  color: white;
-  text-align: center;
-  margin-left: -85px;
-  position: absolute;
-  left: 50%;
-  border: 7px solid #e9ecef;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 170px;
-  height: 170px;
 }
 @media (max-width: 992px) {
   #about .imgbox {
@@ -365,12 +373,6 @@ header .btn h4:hover {
     height: 80px;
     margin-left: 0;
   }
-}
-#about .imgbox h5 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  padding: 38px 40px;
 }
 @media (max-width: 992px) {
   #about .imgbox h5 {

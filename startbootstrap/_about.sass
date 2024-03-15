@@ -1,16 +1,16 @@
 #about
-    padding: 100px 0
+    padding: 96px 0
     h1
         font-size: 42px
         font-weight: 700
-        margin-bottom: 20px
+        margin-bottom: 16px
     h3
         font-size: 19px
-        margin-bottom: 60px
         font-style: italic
         color: #6c757d
+        margin-bottom: 64px
     h2,h4
-        margin-bottom: 10px
+        margin-bottom: 8px
     h2
         font-weight: 600
         font-size: 28px
@@ -19,10 +19,9 @@
         font-size: 27px
     p
         font-size: 19px
-        color: #6c757d
         line-height: 1.4
-
-    .timeline:before
+        color: #6c757d
+    ul:before
         position: absolute
         top: 0
         bottom: 0
@@ -31,8 +30,6 @@
         margin-left: -1.5px
         content: ""
         background-color: #e9ecef
-        @media (max-width: 768px)
-            left: 40px
     ul
         list-style: none
         position: relative
@@ -41,32 +38,56 @@
             position: relative
             margin-bottom: 100px
             min-height: 170px
-            @media (max-width: 992px)
-                min-height: 100px
-            @media (max-width: 768px)
-                min-height: 50px
-                margin-bottom: 50px
-        .lastli
-            margin-bottom: 0
         li:after,li:before
             display: table
             content: " "
         li:after
             clear: both
-
-    .end
+        .lastli
+            margin-bottom: 0
+    .end,.start
         position: relative
         width: 41%
+    .end
         float: left
         padding: 0 20px 20px 100px
         text-align: right
+    .start
+        float: right
+        padding: 0 100px 20px 20px
+    .imgbox
+        position: absolute
+        left: 50%
+        margin-left: -85px
+        text-align: center
+        width: 170px
+        height: 170px
+        border: 7px solid #e9ecef
+        border-radius: 50%
+        background-color: #ffc800
+        color: #ffff
+        overflow: hidden
+        h5
+            font-weight: 700
+            font-size: 20px
+            line-height: 26px
+            padding: 38px 40px
+
+    /* :: Media queries :: */      
+    ul:before
+        @media (max-width: 768px)
+            left: 40px
+    ul
+        li
+            @media (max-width: 992px)
+                min-height: 100px
+            @media (max-width: 768px)
+                min-height: 50px
+                margin-bottom: 50px
+    .end
         @media (max-width: 992px)
             padding: 0 20px 20px 30px
     .start
-        position: relative
-        width: 41%
-        float: right
-        padding: 0 100px 20px 20px
         @media (max-width: 992px)
             padding: 0 30px 20px 20px
     .end,.start
@@ -74,19 +95,7 @@
             padding: 0 20px 0 100px
             width: 100%
             text-align: left
-
     .imgbox
-        background-color: #ffc800
-        color: #ffff
-        text-align: center
-        margin-left: -85px
-        position: absolute
-        left: 50%
-        border: 7px solid #e9ecef
-        border-radius: 50%
-        overflow: hidden
-        width: 170px
-        height: 170px
         @media (max-width: 992px)
             width: 100px
             height: 100px
@@ -97,10 +106,6 @@
             height: 80px
             margin-left: 0
         h5
-            font-weight: 700
-            font-size: 20px
-            line-height: 26px
-            padding: 38px 40px
             @media (max-width: 992px)
                 font-size: 13px
                 line-height: 18px
