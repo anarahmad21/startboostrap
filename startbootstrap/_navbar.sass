@@ -1,0 +1,51 @@
+#mainnav
+    padding: 30px 0
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1030
+    background-color: transparent
+    border: none
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out
+    .btn
+        border: .5px solid #545454
+        border-radius: 6px
+        padding: 11px
+        color: #9b9d9e
+        font-size: 13px
+        font-weight: 700
+        display: none
+        .icon
+            display: inline-block
+            margin-left: 5px
+    .imgbox
+        width: 190px
+        height: 36px
+        cursor: pointer
+        img
+            cursor: pointer
+    .menu
+        a
+            padding: 7px 10px
+            display: inline-block
+            font-size: 18px
+            color: #ffff
+            margin-right: 15px
+            &:hover
+                color: #ffc800
+                cursor: pointer
+
+
+    @media (max-width: 991px)
+        padding: 15px 0
+        background-color: #212529
+    .btn
+        @media (max-width: 991px)
+            display: block
+    .imgbox
+        @media (max-width: 991px)
+            width: 140px
+    .menu
+        @media (max-width: 991px)
+            display: none
