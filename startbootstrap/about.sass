@@ -1,0 +1,111 @@
+#about
+    padding: 100px 0
+    h1
+        font-size: 42px
+        font-weight: 700
+        margin-bottom: 20px
+    h3
+        font-size: 19px
+        margin-bottom: 60px
+        font-style: italic
+        color: #6c757d
+    h2,h4
+        margin-bottom: 10px
+    h2
+        font-weight: 600
+        font-size: 28px
+    h4
+        font-weight: 600
+        font-size: 27px
+    p
+        font-size: 19px
+        color: #6c757d
+        line-height: 1.4
+
+    .timeline:before
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 50%
+        width: 2px
+        margin-left: -1.5px
+        content: ""
+        background-color: #e9ecef
+        @media (max-width: 768px)
+            left: 40px
+    ul
+        list-style: none
+        position: relative
+        margin-bottom: 15px
+        li
+            position: relative
+            margin-bottom: 100px
+            min-height: 170px
+            @media (max-width: 992px)
+                min-height: 100px
+            @media (max-width: 768px)
+                min-height: 50px
+                margin-bottom: 50px
+        .lastli
+            margin-bottom: 0
+        li:after,li:before
+            display: table
+            content: " "
+        li:after
+            clear: both
+
+    .end
+        position: relative
+        width: 41%
+        float: left
+        padding: 0 20px 20px 100px
+        text-align: right
+        @media (max-width: 992px)
+            padding: 0 20px 20px 30px
+    .start
+        position: relative
+        width: 41%
+        float: right
+        padding: 0 100px 20px 20px
+        @media (max-width: 992px)
+            padding: 0 30px 20px 20px
+    .end,.start
+        @media (max-width: 768px)
+            padding: 0 20px 0 100px
+            width: 100%
+            text-align: left
+
+    .imgbox
+        background-color: #ffc800
+        color: #ffff
+        text-align: center
+        margin-left: -85px
+        position: absolute
+        left: 50%
+        border: 7px solid #e9ecef
+        border-radius: 50%
+        overflow: hidden
+        width: 170px
+        height: 170px
+        @media (max-width: 992px)
+            width: 100px
+            height: 100px
+            margin-left: -50px
+        @media (max-width: 768px)
+            left: 0
+            width: 80px
+            height: 80px
+            margin-left: 0
+        h5
+            font-weight: 700
+            font-size: 20px
+            line-height: 26px
+            padding: 38px 40px
+            @media (max-width: 992px)
+                font-size: 13px
+                line-height: 18px
+                padding: 15px 20px
+            @media (max-width: 768px)
+                font-size: 10px
+                line-height: 14px
+                padding: 10px 15px
