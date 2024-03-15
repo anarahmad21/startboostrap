@@ -390,29 +390,22 @@ header .btn h4:hover {
 }
 
 #amazingteam {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: #f8f9fa;
 }
-#amazingteam .textbox {
-  max-width: 850px;
-  margin: auto;
-  text-align: center;
-}
-#amazingteam .textbox h1 {
+#amazingteam h1 {
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
-#amazingteam .textbox h4 {
-  font-size: 20px;
-  margin-bottom: 70px;
+#amazingteam h4 {
+  font-size: 19px;
   font-style: italic;
   color: #6c757d;
+  margin-bottom: 64px;
 }
-@media (max-width: 991px) {
-  #amazingteam .box {
-    margin: 25px 0;
-  }
+#amazingteam .box {
+  margin-bottom: 48px;
 }
 #amazingteam .box .imgbox {
   width: 230px;
@@ -425,12 +418,12 @@ header .btn h4:hover {
 #amazingteam .box h2 {
   font-size: 27px;
   font-weight: 600;
-  margin: 20px 0 0;
+  margin-top: 24px;
 }
 #amazingteam .box h3 {
   font-size: 19px;
   color: #6c757d;
-  margin: 10px 0 20px;
+  margin: 8px 0 20px;
 }
 #amazingteam .box .iconbox {
   margin: auto;
@@ -444,25 +437,19 @@ header .btn h4:hover {
   width: 40px;
   height: 40px;
   margin: 0 9px;
+  cursor: pointer;
 }
 #amazingteam .box .iconbox .icon:hover {
-  cursor: pointer;
   background-color: rgba(33, 37, 41, 0.8392156863);
 }
-#amazingteam .box .iconbox .icon i:hover {
+#amazingteam .box .iconbox .icon i {
   cursor: pointer;
 }
 #amazingteam p {
   font-size: 19px;
   color: #6c757d;
-  margin-top: 50px;
-  max-width: 1000px;
   line-height: 1.4;
-}
-@media (max-width: 991px) {
-  #amazingteam p {
-    margin-top: 30px;
-  }
+  margin-bottom: 16px;
 }
 
 #logos {
