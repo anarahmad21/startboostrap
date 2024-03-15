@@ -17,6 +17,9 @@ header {
   background-position: center;
   /* :: Media queries :: */
 }
+header h1, header h2, header h4, header p {
+  cursor: text;
+}
 header h1 {
   font-size: 85px;
   font-weight: 700;
@@ -136,6 +139,9 @@ header .btn h4:hover {
 #services {
   padding: 90px 0;
 }
+#services h1, #services h2, #services h3, #services h4, #services p {
+  cursor: text;
+}
 #services h1 {
   font-size: 42px;
   font-weight: 700;
@@ -175,6 +181,9 @@ header .btn h4:hover {
 #portfolio {
   padding: 96px 0;
   background-color: #f8f9fa;
+}
+#portfolio h1, #portfolio h2, #portfolio h3, #portfolio h4 {
+  cursor: text;
 }
 #portfolio h1 {
   font-size: 42px;
@@ -236,6 +245,9 @@ header .btn h4:hover {
 #about {
   padding: 96px 0;
   /* :: Media queries :: */      
+}
+#about h1, #about h2, #about h3, #about h4, #about h5, #about p {
+  cursor: text;
 }
 #about h1 {
   font-size: 42px;
@@ -393,6 +405,9 @@ header .btn h4:hover {
   padding: 96px 0;
   background-color: #f8f9fa;
 }
+#amazingteam h1, #amazingteam h2, #amazingteam h3, #amazingteam h4, #amazingteam p {
+  cursor: text;
+}
 #amazingteam h1 {
   font-size: 42px;
   font-weight: 700;
@@ -466,6 +481,9 @@ header .btn h4:hover {
   background-image: url("assets/map-image.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+#contactus h1, #contactus h2 {
+  cursor: text;
 }
 #contactus h1 {
   font-size: 42px;
