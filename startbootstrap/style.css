@@ -374,12 +374,12 @@ header .btn .icon {
 }
 #amazingteam h4 {
   font-size: 19px;
-  font-style: italic;
   color: #6c757d;
   margin-bottom: 64px;
 }
 #amazingteam .box {
   margin-bottom: 48px;
+  text-align: center;
 }
 #amazingteam .box .imgbox {
   width: 230px;
@@ -390,8 +390,8 @@ header .btn .icon {
   margin: auto;
 }
 #amazingteam .box h2 {
-  font-size: 27px;
   font-weight: 600;
+  font-size: 27px;
   margin-top: 24px;
 }
 #amazingteam .box h3 {
