@@ -11,27 +11,82 @@ body section {
 }
 
 header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #212529;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+header .menu {
+  display: flex;
+  justify-content: space-between;
+}
+header .menu .imgbox {
+  height: 24px;
+  cursor: pointer;
+}
+header .menu .imgbox img {
+  cursor: pointer;
+}
+header .menu a {
+  padding: 7px 10px;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  margin-right: 15px;
+}
+header .menu a:hover {
+  color: #ffc800;
+  cursor: pointer;
+}
+header .btn {
+  border: 0.5px solid #545454;
+  border-radius: 6px;
+  padding: 9px;
+  width: 80px;
+  color: #9b9d9e;
+  font-size: 13px;
+  font-weight: 700;
+  display: none;
+}
+header .btn .icon {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* Media queries */
+@media (max-width: 991px) {
+  header nav {
+    display: none;
+  }
+  header .btn {
+    display: block;
+  }
+}
+#welcome {
   padding: 245px 0 210px;
   background-image: url("assets/header-bg.jpg");
   background-size: cover;
   background-position: center;
   /* :: Media queries :: */
 }
-header h1, header h2, header h4, header p {
+#welcome h1, #welcome h2, #welcome h4, #welcome p {
   cursor: text;
 }
-header h1 {
+#welcome h1 {
   font-size: 85px;
   font-weight: 700;
   margin: 30px 0;
   color: white;
 }
-header h2 {
+#welcome h2 {
   font-size: 42px;
   font-style: italic;
   color: white;
 }
-header .btn {
+#welcome .btn {
   margin-top: 30px;
   width: 220px;
   height: 70px;
@@ -39,100 +94,35 @@ header .btn {
   color: white;
   padding: 17px 0;
 }
-header .btn:hover {
+#welcome .btn:hover {
   background-color: #d0a300;
   color: white;
 }
-header .btn h4 {
+#welcome .btn h4 {
   font-size: 20px;
   font-weight: 600;
 }
-header .btn h4:hover {
+#welcome .btn h4:hover {
   cursor: pointer;
 }
 @media (max-width: 767px) {
-  header {
+  #welcome {
     padding: 135px 0 90px;
   }
 }
 @media (max-width: 767px) {
-  header h1 {
+  #welcome h1 {
     font-size: 65px;
   }
 }
 @media (max-width: 767px) {
-  header h2 {
+  #welcome h2 {
     font-size: 30px;
   }
 }
 @media (max-width: 767px) {
-  header .btn {
+  #welcome .btn {
     margin-top: 0;
-  }
-}
-
-#mainnav {
-  padding: 30px 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  background-color: transparent;
-  border: none;
-  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-}
-#mainnav .btn {
-  border: 0.5px solid #545454;
-  border-radius: 6px;
-  padding: 11px;
-  color: #9b9d9e;
-  font-size: 13px;
-  font-weight: 700;
-  display: none;
-}
-#mainnav .btn .icon {
-  display: inline-block;
-  margin-left: 5px;
-}
-#mainnav .imgbox {
-  width: 190px;
-  height: 36px;
-  cursor: pointer;
-}
-#mainnav .imgbox img {
-  cursor: pointer;
-}
-#mainnav .menu a {
-  padding: 7px 10px;
-  display: inline-block;
-  font-size: 18px;
-  color: white;
-  margin-right: 15px;
-}
-#mainnav .menu a:hover {
-  color: #ffc800;
-  cursor: pointer;
-}
-@media (max-width: 991px) {
-  #mainnav {
-    padding: 15px 0;
-    background-color: #212529;
-  }
-}
-@media (max-width: 991px) {
-  #mainnav .btn {
-    display: block;
-  }
-}
-@media (max-width: 991px) {
-  #mainnav .imgbox {
-    width: 140px;
-  }
-}
-@media (max-width: 991px) {
-  #mainnav .menu {
-    display: none;
   }
 }
 
