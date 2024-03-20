@@ -13,6 +13,7 @@ body section {
 header {
   padding: 20px 0;
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   left: 0;
@@ -70,7 +71,6 @@ header .btn .icon {
   background-image: url("assets/header-bg.jpg");
   background-size: cover;
   background-position: center;
-  /* :: Media queries :: */
 }
 #welcome h1, #welcome h2, #welcome h4, #welcome p {
   cursor: text;
@@ -83,7 +83,6 @@ header .btn .icon {
 }
 #welcome h2 {
   font-size: 42px;
-  font-style: italic;
   color: white;
 }
 #welcome .btn {
@@ -105,27 +104,22 @@ header .btn .icon {
 #welcome .btn h4:hover {
   cursor: pointer;
 }
+
+/* Media queries */
 @media (max-width: 767px) {
   #welcome {
     padding: 135px 0 90px;
   }
-}
-@media (max-width: 767px) {
   #welcome h1 {
     font-size: 65px;
   }
-}
-@media (max-width: 767px) {
   #welcome h2 {
     font-size: 30px;
   }
-}
-@media (max-width: 767px) {
   #welcome .btn {
     margin-top: 0;
   }
 }
-
 #services {
   padding: 90px 0;
 }
@@ -147,7 +141,6 @@ header .btn .icon {
   color: #6c757d;
 }
 #services h3 {
-  font-style: italic;
   margin-bottom: 64px;
 }
 #services p {
@@ -183,7 +176,6 @@ header .btn .icon {
 #portfolio h4 {
   font-size: 19px;
   margin-bottom: 64px;
-  font-style: italic;
   color: #6c757d;
 }
 #portfolio .box {
@@ -192,17 +184,20 @@ header .btn .icon {
   margin-left: auto;
   margin-right: auto;
   max-width: 420px;
+  text-align: center;
 }
 #portfolio .box .imgbox {
   position: relative;
 }
-#portfolio .box h2 {
+#portfolio .box .textbox {
+  padding: 24px;
+}
+#portfolio .box .textbox h2 {
   font-size: 27px;
   font-weight: 600;
   margin-bottom: 8px;
 }
-#portfolio .box h3 {
-  font-style: italic;
+#portfolio .box .textbox h3 {
   font-size: 19px;
   color: #6c757d;
 }
@@ -234,19 +229,17 @@ header .btn .icon {
 
 #about {
   padding: 96px 0;
-  /* :: Media queries :: */      
 }
 #about h1, #about h2, #about h3, #about h4, #about h5, #about p {
   cursor: text;
 }
 #about h1 {
-  font-size: 42px;
   font-weight: 700;
+  font-size: 42px;
   margin-bottom: 16px;
 }
 #about h3 {
   font-size: 19px;
-  font-style: italic;
   color: #6c757d;
   margin-bottom: 64px;
 }
@@ -266,16 +259,6 @@ header .btn .icon {
   line-height: 1.4;
   color: #6c757d;
 }
-#about ul:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  margin-left: -1.5px;
-  content: "";
-  background-color: #e9ecef;
-}
 #about ul {
   list-style: none;
   position: relative;
@@ -286,27 +269,25 @@ header .btn .icon {
   margin-bottom: 100px;
   min-height: 170px;
 }
-#about ul li:after, #about ul li:before {
-  display: table;
-  content: " ";
-}
-#about ul li:after {
-  clear: both;
-}
-#about ul .lastli {
-  margin-bottom: 0;
+#about ul li.firstli {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1.5px;
+  background-color: #e9ecef;
 }
 #about .end, #about .start {
   position: relative;
   width: 41%;
 }
 #about .end {
-  float: left;
   padding: 0 20px 20px 100px;
   text-align: right;
 }
 #about .start {
-  float: right;
+  left: 60%;
   padding: 0 100px 20px 20px;
 }
 #about .imgbox {
@@ -328,69 +309,57 @@ header .btn .icon {
   line-height: 26px;
   padding: 38px 40px;
 }
-@media (max-width: 768px) {
-  #about ul:before {
-    left: 40px;
-  }
-}
+
+/* Media queries */
 @media (max-width: 992px) {
   #about ul li {
     min-height: 100px;
   }
-}
-@media (max-width: 768px) {
-  #about ul li {
-    min-height: 50px;
-    margin-bottom: 50px;
-  }
-}
-@media (max-width: 992px) {
-  #about .end {
+  #about ul li .end {
     padding: 0 20px 20px 30px;
   }
-}
-@media (max-width: 992px) {
-  #about .start {
+  #about ul li .start {
     padding: 0 30px 20px 20px;
   }
-}
-@media (max-width: 768px) {
-  #about .end, #about .start {
-    padding: 0 20px 0 100px;
-    width: 100%;
-    text-align: left;
-  }
-}
-@media (max-width: 992px) {
-  #about .imgbox {
+  #about ul li .imgbox {
     width: 100px;
     height: 100px;
     margin-left: -50px;
   }
-}
-@media (max-width: 768px) {
-  #about .imgbox {
-    left: 0;
-    width: 80px;
-    height: 80px;
-    margin-left: 0;
-  }
-}
-@media (max-width: 992px) {
-  #about .imgbox h5 {
+  #about ul li .imgbox h5 {
     font-size: 13px;
     line-height: 18px;
     padding: 15px 20px;
   }
 }
-@media (max-width: 768px) {
-  #about .imgbox h5 {
+@media (max-width: 767px) {
+  #about ul li.firstli {
+    left: 40px;
+  }
+  #about ul li {
+    min-height: 50px;
+    margin-bottom: 50px;
+  }
+  #about ul li .end, #about ul li .start {
+    padding: 0 20px 0 100px;
+    width: 100%;
+    text-align: left;
+  }
+  #about ul li .start {
+    left: 0;
+  }
+  #about ul li .imgbox {
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+  }
+  #about ul li .imgbox h5 {
     font-size: 10px;
     line-height: 14px;
     padding: 10px 15px;
   }
 }
-
 #amazingteam {
   padding: 96px 0;
   background-color: #f8f9fa;

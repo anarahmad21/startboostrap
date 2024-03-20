@@ -3,12 +3,11 @@
     h1,h2,h3,h4,h5,p
         cursor: text
     h1
-        font-size: 42px
         font-weight: 700
+        font-size: 42px
         margin-bottom: 16px
     h3
         font-size: 19px
-        font-style: italic
         color: #6c757d
         margin-bottom: 64px
     h2,h4
@@ -23,15 +22,6 @@
         font-size: 19px
         line-height: 1.4
         color: #6c757d
-    ul:before
-        position: absolute
-        top: 0
-        bottom: 0
-        left: 50%
-        width: 2px
-        margin-left: -1.5px
-        content: ""
-        background-color: #e9ecef
     ul
         list-style: none
         position: relative
@@ -40,22 +30,22 @@
             position: relative
             margin-bottom: 100px
             min-height: 170px
-        li:after,li:before
-            display: table
-            content: " "
-        li:after
-            clear: both
-        .lastli
-            margin-bottom: 0
+        li.firstli
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 50%
+            width: 2px
+            margin-left: -1.5px
+            background-color: #e9ecef
     .end,.start
         position: relative
         width: 41%
     .end
-        float: left
         padding: 0 20px 20px 100px
         text-align: right
     .start
-        float: right
+        left: 60%
         padding: 0 100px 20px 20px
     .imgbox
         position: absolute
@@ -75,44 +65,45 @@
             line-height: 26px
             padding: 38px 40px
 
-    /* :: Media queries :: */      
-    ul:before
-        @media (max-width: 768px)
-            left: 40px
-    ul
-        li
-            @media (max-width: 992px)
+/* Media queries */
+@media (max-width: 992px)
+    #about
+        ul
+            li
                 min-height: 100px
-            @media (max-width: 768px)
+                .end
+                    padding: 0 20px 20px 30px
+                .start
+                    padding: 0 30px 20px 20px
+                .imgbox
+                    width: 100px
+                    height: 100px
+                    margin-left: -50px
+                    h5
+                        font-size: 13px
+                        line-height: 18px
+                        padding: 15px 20px
+
+@media (max-width: 767px)
+    #about
+        ul
+            li.firstli
+                left: 40px
+            li
                 min-height: 50px
                 margin-bottom: 50px
-    .end
-        @media (max-width: 992px)
-            padding: 0 20px 20px 30px
-    .start
-        @media (max-width: 992px)
-            padding: 0 30px 20px 20px
-    .end,.start
-        @media (max-width: 768px)
-            padding: 0 20px 0 100px
-            width: 100%
-            text-align: left
-    .imgbox
-        @media (max-width: 992px)
-            width: 100px
-            height: 100px
-            margin-left: -50px
-        @media (max-width: 768px)
-            left: 0
-            width: 80px
-            height: 80px
-            margin-left: 0
-        h5
-            @media (max-width: 992px)
-                font-size: 13px
-                line-height: 18px
-                padding: 15px 20px
-            @media (max-width: 768px)
-                font-size: 10px
-                line-height: 14px
-                padding: 10px 15px
+                .end,.start
+                    padding: 0 20px 0 100px
+                    width: 100%
+                    text-align: left
+                .start
+                    left: 0
+                .imgbox
+                    left: 0
+                    width: 80px
+                    height: 80px
+                    margin-left: 0
+                    h5
+                        font-size: 10px
+                        line-height: 14px
+                        padding: 10px 15px
