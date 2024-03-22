@@ -4,7 +4,6 @@ body {
 }
 body .imgbox img {
   width: 100%;
-  height: 100%;
 }
 body section {
   padding: 50px 0;
@@ -18,17 +17,18 @@ header {
   right: 0;
   left: 0;
   background-color: #212529;
-  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  transition: 0.3s;
+  /* Media queries */
 }
 header .menu {
   display: flex;
   justify-content: space-between;
 }
 header .menu .imgbox {
-  height: 24px;
   cursor: pointer;
 }
 header .menu .imgbox img {
+  height: 24px;
   cursor: pointer;
 }
 header .menu a {
@@ -56,21 +56,25 @@ header .btn .icon {
   display: inline-block;
   margin-left: 5px;
 }
-
-/* Media queries */
 @media (max-width: 991px) {
-  header nav {
+  header .menu {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  header .menu nav {
     display: none;
   }
   header .btn {
     display: block;
   }
 }
+
 #welcome {
   padding: 245px 0 210px;
   background-image: url("assets/header-bg.jpg");
   background-size: cover;
   background-position: center;
+  /* Media queries */
 }
 #welcome h1, #welcome h2, #welcome h4, #welcome p {
   cursor: text;
@@ -104,8 +108,6 @@ header .btn .icon {
 #welcome .btn h4:hover {
   cursor: pointer;
 }
-
-/* Media queries */
 @media (max-width: 767px) {
   #welcome {
     padding: 135px 0 90px;
@@ -120,6 +122,7 @@ header .btn .icon {
     margin-top: 0;
   }
 }
+
 #services {
   padding: 90px 0;
 }
@@ -229,6 +232,7 @@ header .btn .icon {
 
 #about {
   padding: 96px 0;
+  /* Media queries */
 }
 #about h1, #about h2, #about h3, #about h4, #about h5, #about p {
   cursor: text;
@@ -278,6 +282,9 @@ header .btn .icon {
   margin-left: -1.5px;
   background-color: #e9ecef;
 }
+#about ul li.fastli {
+  margin-bottom: 0;
+}
 #about .end, #about .start {
   position: relative;
   width: 41%;
@@ -309,8 +316,6 @@ header .btn .icon {
   line-height: 26px;
   padding: 38px 40px;
 }
-
-/* Media queries */
 @media (max-width: 992px) {
   #about ul li {
     min-height: 100px;
@@ -360,6 +365,7 @@ header .btn .icon {
     padding: 10px 15px;
   }
 }
+
 #amazingteam {
   padding: 96px 0;
   background-color: #f8f9fa;
@@ -427,10 +433,10 @@ header .btn .icon {
 }
 
 #logos .imgbox {
-  height: 43px;
   cursor: pointer;
 }
 #logos .imgbox img {
+  height: 43px;
   cursor: pointer;
 }
 
@@ -440,6 +446,7 @@ header .btn .icon {
   background-image: url("assets/map-image.png");
   background-position: center;
   background-repeat: no-repeat;
+  /* Media queries */        
 }
 #contactus h1, #contactus h2 {
   cursor: text;
@@ -461,6 +468,9 @@ header .btn .icon {
   border: 1px solid #ced4da;
   line-height: 1.5;
   margin-bottom: 24px;
+}
+#contactus .inputPhone {
+  margin-bottom: 0;
 }
 #contactus textarea {
   font-size: 18px;
@@ -492,18 +502,33 @@ header .btn .icon {
   font-weight: 600;
   font-size: 20px;
 }
+@media (max-width: 767px) {
+  #contactus .inputPhone {
+    margin-bottom: 24px;
+  }
+}
 
 footer {
   padding: 24px 0;
+  /* Media queries */
 }
 footer h1, footer h2 {
   color: rgba(33, 37, 41, 0.7019607843);
   font-size: 17px;
 }
-footer h1 {
+footer .start, footer .end {
+  width: 100%;
+}
+footer .start {
+  text-align: left;
+}
+footer .start h1 {
   cursor: text;
 }
-footer h2 {
+footer .end {
+  text-align: right;
+}
+footer .end h2 {
   display: inline-block;
   margin: 0 10px;
   cursor: pointer;
@@ -524,4 +549,13 @@ footer .icon:hover {
 }
 footer .icon i {
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  footer .start, footer .end {
+    text-align: center !important;
+  }
+  footer .icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

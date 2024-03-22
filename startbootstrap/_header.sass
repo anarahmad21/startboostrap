@@ -6,14 +6,14 @@ header
     right: 0
     left: 0
     background-color: #212529
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out
+    transition: 0.3s
     .menu
         display: flex
         justify-content: space-between
         .imgbox
-            height: 24px
             cursor: pointer
             img
+                height: 24px
                 cursor: pointer
         a
             padding: 7px 10px
@@ -37,10 +37,12 @@ header
             display: inline-block
             margin-left: 5px
 
-/* Media queries */
-@media (max-width: 991px)
-    header
-        nav
-            display: none
+    /* Media queries */
+    @media (max-width: 991px)
+        .menu
+            padding-top: 8px
+            padding-bottom: 8px
+            nav
+                display: none
         .btn
             display: block

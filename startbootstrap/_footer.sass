@@ -3,12 +3,18 @@ footer
     h1,h2
         color: #212529b3
         font-size: 17px
-    h1
-        cursor: text
-    h2
-        display: inline-block
-        margin: 0 10px
-        cursor: pointer
+    .start,.end
+        width: 100%
+    .start
+        text-align: left
+        h1
+            cursor: text
+    .end
+        text-align: right
+        h2
+            display: inline-block
+            margin: 0 10px
+            cursor: pointer
     .icon
         display: inline-block
         background-color: #212529
@@ -23,3 +29,11 @@ footer
             background-color: #212529d6
         i
             cursor: pointer
+
+    /* Media queries */
+    @media (max-width: 991px)
+        .start,.end
+            text-align: center!important
+        .icon
+            margin-top: 20px
+            margin-bottom: 20px
